@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+  
+body {
+    background-image: url('image/lavender.png'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px;
+    margin: 0;
+}
+
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.calculator {
+    background: #ffe4f4;
+    border: 5px solid #ffb6e1;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(255, 192, 203, 0.3);
+}
+  
+.display {
+    background: #fff;
+    color: #333;
+    font-size: 2em;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+    word-wrap: break-word;
+    min-height: 50px;
+}
+  
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+  
+button {
+    padding: 15px;
+    font-size: 1.1em;
+    background: linear-gradient(145deg, #ffb3d9, #c1eaff);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 192, 203, 0.3);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(145deg, #ff9eaf, #c1d9ff);
+    transform: scale(1.05);
+}
+  
+button.equal {
+    grid-column: span 4;
+    background: linear-gradient(145deg, #ff86c5, #ffdd85);
+    color: white;
+    font-weight: bold;
+}
+
+button.equal:hover {
+    background: linear-gradient(145deg, #ff66b3, #ffd700);
+}
+  
+.history-section {
+    margin-top: 20px;
+    background: #fff0f7;
+    border: 2px dashed #ffb6e1;
+    border-radius: 12px;
+    padding: 10px;
+}
+  
+.history-section h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #ff5ca7;
+    text-align: center;
+}
+  
+#history-list {
+    list-style: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+  
+#history-list li {
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    background: #ffe4f9;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #444;
+}
+  
+.delete-btn {
+    background: none;
+    border: none;
+    color: #ff5ca7;
+    font-size: 1em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.side-text {
+    max-width: 300px;
+    color: #4d0f2b;
+    text-align: left;
+}
+
+.side-text h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.side-text p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+
